@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial;
+}
+/*> selector hijos, y * indica entonces todos los hijos*/
+article > *{
+    padding: 6px;
+    margin: 2px;
+    border: 1px solid #3282c7;
+}
+/*selecciona el primer tipo de elemento que se indica en este caso el primer div*/
+article div:first-of-type{
+    background-color: aqua;
+}
+
+/*selecciona el ultimo tipo de elemento indicado*/
+article li:last-of-type {
+    background-color: aqua;
+}
+
+article div:last-of-type{
+    background-color: aqua;
+}
+/*unico tipo de elemento*/
+article p:only-of-type{
+    background-color: aqua;
+}
+/*el n tipo de elemento indicado*/
+article div:nth-of-type(2n+1){
+    background-color: fuchsia;
+}
+
+article li:nth-last-of-type(1){
+    background-color: blue;
+}

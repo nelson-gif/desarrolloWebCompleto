@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*selector de hijos selector1 > selector2*/
+.otro_contenido > p{
+    background-color:aqua;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+a > strong{
+    color: red;
+    background-color: black;
+    padding: 10px;
+}
+
+p > span{
+    color: #00ff27;
+    font-size: 20px;
+}
+
+/*selector de hermanos selector1+selector2 el hermano de un selector es el que sigue despues de esa etiqueta*/
+h3+a{
+    font-size: 25px;
+}
+
+.otro_contenido+p{
+    color:fuchsia;
+    background-color: dimgrey;
+}
+/*selector de hermano general selector1~elemento todas las etiquetas que esten abajo del selector1*/
+.otro_contenido~p{
+    background-color:firebrick;
+}
+
+h3~a{
+    font-size: 45px;
+}

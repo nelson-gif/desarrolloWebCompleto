@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Helvetica;
+}
+
+section{
+    height:200px;
+}
+
+nav ul{
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    padding:10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:aliceblue;
+    padding: 10px;
+    background-color: deeppink;
+}
+
+section{
+    height: 500px;
+}
+
+#section1{
+    background-color:aqua;
+}
+
+#section2{
+    background-color: coral;
+}
+
+#section3{
+    background-color: antiquewhite;
+}
+
+h1{
+    text-align:center;
+    background-color: blueviolet;
+    margin-bottom: 10px;
+}
+
+/*se aplica a todo html, hace referencia a html, se puede usar como selector universal*/
+/*:root{
+    background-color: teal;
+}/*
+/*los elementos que no tienen hijos, y que estan vacio*/
+:empty{
+    width:50px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: fuchsia;
+}
+p{
+    background-color: forestgreen;
+}
+/*aplica las propiedades a todos menos a lo que este dentro del parentesis
+:not(p){
+    background-color: black;
+}*/
+section:not(#section1){
+    width:70%;
+    margin: 0 auto;
+}
+/*para aplicar estilo a los elementos despues de dirigirse a ellos por medio de los enlaces*/
+:target{
+    background-color: firebrick!important;
+    color:white;
+    padding:40px;
+    font-size:20px;
+}
+

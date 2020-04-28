@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 20px;
+}
+/*solo para la primera linea del primer elemento se ajusta al dispositivo*/
+/*los dos puntos es propio del css3*/
+p::first-line{
+    color:violet;
+    font-size: 25px;
+}
+/*aplica a la primera letra de la primera linea*/
+#clase42::first-letter{
+    font-size: 40px;
+    background-color: red;
+    color:white;
+    padding:4px 10px;
+    text-transform: uppercase;
+    
+}
+/*agregar texto o cosas antes de algo, es inline por defecto*/
+h1::before{
+    content: "Esta es la etiqueta h1";
+    font-size:100px;
+    color:firebrick;
+    font-family: Helvetica;
+}
+/*agregar texto despues de algo*/
+h1::after{
+    content:".";
+    font-size: 100px;
+}
+/*para aplicar una seleccion como si fuese un destacado, se puede agregar a un elemento en especifico o puede ser universal, en este caso lo puse universal, solo puede usar estas propiedades*/
+::selection{
+    background-color: red;
+    color:white;
+    /*text-shadow para agregar sombra,el primer valor es en x, y y el ultimo valor es el desenfoque, no es necesario poner el desenfoque, funciona sin el desenfoque npx npx npx color*/
+    text-shadow: 4px 5px 2px black;
+}
+
+h3::selection{
+    background-color: forestgreen;
+    color: white;
+}
+/*clase 44 Scrollbar webkit-scrollbar solo funciona con los navegadores chrome zafary y opera que tengan el prefijo webkit*/
+.text{
+    height: 200px;
+    width: 300px;
+    border: 1px solid black;
+    /*overflow es la barra de scroll, overflow:scroll, es para mostrar scroll vertical y horizontal*/
+    overflow: auto;
+}
+/*ancho de la barra */
+.text::-webkit-scrollbar{
+    width: 15px;
+}
+/*donde se desplaza la barra*/
+/*.text::-webkit-scrollbar-track:horizontal{} para modificar los horizontales*/
+.text::-webkit-scrollbar-track{
+    background-color: gray;
+}
+/*la barra desplazable*/
+.text::-webkit-scrollbar-thumb{
+    background-color: red;
+}
+/*para que se agregue al navegador tambien, esto es universal*/
+::-webkit-scrollbar{
+    width: 15px;
+}
+/*donde se desplaza la barra*/
+::-webkit-scrollbar-track{
+    background-color: gray;
+}
+/*la barra desplazable*/
+::-webkit-scrollbar-thumb{
+    background-color: red;
+}
+/*hover es para cuando pase encima el mouse*/
+::-webkit-scrollbar-thumb:hover{
+    background-color: black;
+}
+/*active es para cuando haga click encima*/
+::-webkit-scrollbar-thumb:active{
+    background-color: green;
+}
+/*los botones de abajo para bajar y subir*/
+::-webkit-scrollbar-button{
+    background-color: yellow;
+    /*background-image(img); es para agregar una imagen*/
+}
+/*::-webkit-scrollbar-button:decrement{} es para solo la flecha de arriba
+::-webkit-scrollbar-button:decrement{}es solo para la flecha de abajo
+::-webkit-scrollbar-button:horizontal:decrement{}para horizontal
+::-webkit-scrollbar-button:vertical:decrement{} para vertical
+*/

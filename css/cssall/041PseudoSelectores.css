@@ -1,0 +1,23 @@
+*{
+    margin:0px;
+    padding:0;
+}
+
+form{
+    width:20%;
+}
+/*le aplica a los que estan habilitados*/
+input:enabled{
+    background:green;
+    color:aqua;
+}
+/*le aplica a los que estan disabled*/
+input:disabled{
+    background-color: red;
+    color:white;
+}
+/*se aplica a los input que estan checkeados*/
+input:checked{
+    width:100px;
+    height:100px;
+}

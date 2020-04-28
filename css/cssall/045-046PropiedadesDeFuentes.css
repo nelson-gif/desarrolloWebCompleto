@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0px;
+}
+
+p{/*primero busca helvetica si no la encuentra busca arial y sucesiv.*/
+    /*tipos de fuentes genericas, serif --> Times New Roman, Times, Garamond, Georgia, Cambria, sans-serif --> Arial, Helvetica, Verdana, Trebuchet, Tahoma, Futura, cursive --> Comic Sans, fantasy--> Impact
+    , monospace -->Courier New, Monaco, Consolas*/
+    /*
+    font-family: Helvetica, arial, sans-serif;
+    font-style: italic;/*oblicue, normal
+    font-weight: bold;bolder, lighter, normal, 100, 200-900
+    font-size: 20px;em, xx-small,x-large,large, xx-large, %,initial, inheret etc
+    todo mayusulas
+    font-variant: small-caps;*/
+    /*poner todo en una sola propiedad*/
+    /*en este orden colocar, font-style, font-weight, font-variant, font-size, font-family, es valido si solo se pone font-size, y font familly*/
+    font:italic bold small-caps 20px Helvetica;
+    
+}
+
+

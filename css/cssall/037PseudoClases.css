@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding: 0;
+}
+/*hace referencia al primer span*/
+p span:first-child{
+    background-color: aqua;
+}
+/*hace referencia al ultimo hijo del elemento padre*/
+p span:last-child{
+    background-color:fuchsia;
+    color:blue;
+    font-size:25px;
+}
+/*hacer referencia al unico hijo dentro del elemento padre, en este caso no se agrega porque no es el unico hijo que existe en el elemento padre*/
+p span:only-child{
+    background-color:blue;
+}
+/*para indicar que se active cuando el doc este en español, si el html se cambia a en (ingles) este se desactivará*/
+/*
+a:lang(es){
+    background-color:violet;
+    color:white;
+    padding:5px;
+    text-decoration:none;
+}*/
+/*pseudoclase link, para los link que no se han visitado*/
+a{
+    display:block;
+    
+}
+a:link{
+    color: forestgreen;
+}
+/*para los que ya han sido visitados*/
+a:visited{
+    color:red;
+}
+/*se muestra cuando el usuario da click en el enlace*/
+a:active{
+    background-color: black;
+    color:white;
+    padding:10px;
+}
+/*cuando el usuario pasa el cursos encima, la coma es para decirle a css que tambien quiero que se aplique a lo que va despues de la coma*/
+a:hover, p:hover{
+    background-color:aqua;
+    color:firebrick;
+    padding:15px;
+    cursor:pointer;
+}
+/*cuando el elemento esta seleccionado, normalmente se activa con input*/
+input:focus,textarea:focus{
+    background-color:red;
+    color:white;
+    padding:20px;
+}

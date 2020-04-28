@@ -1,0 +1,36 @@
+/*selectores id y class clase  id 33*/
+*{
+    padding: 0;
+    margin:0;
+}
+#navegacion{
+    height: 50px;
+    background-color: aqua;
+}
+
+#slider{
+    height:150px;
+    background-color:blueviolet;
+}
+
+#services{
+    height:120px;
+    background-color: blue;
+}
+
+#pie{
+    background-color: fuchsia;
+    height: 50px;
+}
+
+h4{
+    text-align: center;
+}
+/*clase*/
+.servicios{
+    width:100px;
+    height: 100px;
+    background-color:#206723;
+    border-radius: 50%;
+    display: inline-block;
+}

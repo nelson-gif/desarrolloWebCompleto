@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios</title>
+    </head>
+    <!--para que se cambie el cursos a la hora de ponerlo encima-->
+    <style>
+        
+        summary{
+            
+            cursor: pointer;
+        }
+    </style>
+    <body>
+       <h1>Formularios ver desde 019</h1>
+       
+       <!--form es la base de todo el formulario, todo lo demas va dentro de form, method get es para obtener lo que se ingresa en los formularios, enctype es para indicar que se va a recibir cualquier archivo desde el ordenador-->
+       <form metod="get" enctype="multipart/form-data">
+          <!--conjunto de controles, para agrupar los controles de un formulario por medio de un recuadro-->
+           <fieldset>
+              <!--titulo de cada campo de fieldset-->
+               <legend>Datos Personales</legend>
+               <!--id y for tienen que tener el mismo nombre dentro de las comillas para que al darle clic al label automaticamente se ponga la opcion de escribir en el input, en input existe type-- text, email para validar que sea email, button para colocar un boton de enviar, submit para boton enviar, name es el nombre del txt es como el nombre de la variable -->
+               <label for="nombre">Nombre</label>
+               <input name="nombre" id="nombre" type="text" autocomplete="off">
+               <input type="submit" value="enviar">
+               <input id="pass" type="password">
+               <input type="date">
+               
+           </fieldset>
+           <fieldset>
+              <!--radio es para seleccion,cuando todos los input tienen el mismo name, solo deja seleccionar uno-->
+               <legend>selecciona un unico animal</legend>
+               <label for="">Perro</label>
+               <input name="animal"  type="radio" value="perro">
+               <label for="" >gato</label>
+               <input name="animal" type="radio" value="gato">
+               <label for="">pato</label>
+               <input name="animal" type="radio" value="pato">
+               <label for="">gallina</label>
+               <input name="animal" type="radio" value="gallina">
+           </fieldset>
+           <fieldset>
+               <legend>selecciona los animales que quieras</legend>
+               <input type="checkbox">
+               <label for="">Perro</label>
+               <input name="animal1"  type="checkbox" value="perro">
+               <label for="" >gato</label>
+               <input name="animal2" type="checkbox" value="gato">
+               <label for="">pato</label>
+               <input name="animal3" type="checkbox" value="pato">
+               <label for="">gallina</label>
+               <input name="animal4" type="checkbox" value="gallina">
+           </fieldset>
+           <fieldset>
+              <!--todos tienen que tener un name-->
+               <input type="range" min="0" max="100" value="25">
+               <input type="search">
+               <input type="tel">
+               <input type="month">
+               <input type="week">
+               <input type="image">
+               <input type="color">
+               <!--multiple para que deje agregar varios archivos, disable es para desactivar-->
+               <input type="file" multiple disabled>
+               
+               
+               
+           </fieldset>
+           <input type="reset" value="limpiar">
+           
+       </form>
+       
+       
+        <!--ver video 020, formulario parte2-->
+        <!---->
+        <input type="submit" value="enviar">
+        <form action="">
+            
+            <button type="submit">Enviar</button>
+            <select name="" id="">
+               <option value="">Selecciona un animal</option>
+                <option value="">Gato</option>
+                <option value="">Perro</option>
+                <option value="">Pato</option>
+            </select>
+            
+            <select name="" id="">
+                <option value="">Selecciona un lenguaje</option>
+                <optgroup label="lenguaje del lado del cliente">
+                    <option value="">HTML</option>
+                    <option value="">Javascript</option>
+                </optgroup>
+                <optgroup label ="lenguajes del lado del servidor">
+                    <option value="">php</option>
+                    <option value="">asp net</option>
+                </optgroup>
+                
+            </select>
+            
+            <fieldset>
+                <legend>ciudades</legend>
+                <label for="">elige una ciudad</label>
+                <input name="ciudad" type="search" list="ciudades">
+                <datalist id="ciudades">
+                   <!--en este caso se puede eliminar las etiquetas de cierre para ahorrar codigo-->
+                    <option value="santa marta"></option>
+                    <option value="wetrre"></option>
+                    <option value="santta"></option>
+                    <option value="san marta"></option>
+                </datalist>
+            </fieldset>
+            
+            
+        </form> 
+        <!--para mostrar un progreso cuando se manda un archivo o algo asi max es el maximo valor a completar, value es para mostrar un porcentaje progresado ingresar un valor para mejor comprension, se puede agregar hiden para ocultar-->
+        <progress value ="" max="100" ></progress>
+        
+       
+       <fieldset>
+           <legend>contactenos</legend>
+           <input name ="nombre" type="text" placeholder="su nombre..." required=""><!--required es para poner un campo 
+           obligatorio-->
+           <input name ="nombre" type="text" placeholder="su edad" required>
+           <!--cols es el ancho o columnas, rows son las filas o el alto, maxlenght="" para poner un limite de letras-->
+            <textarea name="mensaje" id="" cols="30" rows="10"   maxlenght="5" ></textarea>
+            <button type="submit">Enviar</button>
+       </fieldset>
+       
+       
+       <!--021 formularios parte3, tambien se pudo hacer con un script ver video.-->
+       <form name="multiplicacion" onsubmit="return false" oninput="resultado.value = parseInt(numero1.value)*parseInt(numero2.value)">
+          <!--step para aumentar n numeros-->
+          <label for="">calculadora de multiplicacion</label><br><br>
+           <input id="numero1" type="number" step ="3">
+           <input id="numero2" type="number" step="any">=
+           <output name="resultado" for="numero1 numero2">
+           
+       </form>
+       
+       <!--022 Elementos interactivos,para mostrar u ocultar informacion sin necesidad de usar javascript-->
+       <details>
+          <summary>este es para cambiarle el titulo</summary>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus eaque sunt vero veniam, optio illo officia ut quas illum sequi autem, eligendi sapiente aliquid assumenda blanditiis, asperiores quo aperiam.</p>
+           <div class="bloque"> 
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam consequatur assumenda quo aliquam esse, facere, modi libero id quos ducimus saepe animi quisquam atque eaque dicta delectus error. Numquam, unde!</p>
+           </div>
+       </details>
+       <details>
+           <summary>menu</summary>
+           <ul>
+               <li>items</li>
+               <li>items</li>
+               <li>items</li>
+               <li>items</li>
+               <li>items</li>
+           </ul>
+       </details>
+       
+       
+    </body>
+    
+</html>

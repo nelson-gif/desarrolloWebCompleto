@@ -1,0 +1,42 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+/*selector de atributo*/
+[title]{
+    background-color: aquamarine;
+}
+
+/*selector de atributo con su valor*/
+[title="etiqueta1 copia2"]{
+    background-color: aqua;
+}
+
+/*para los que tienen un espacio, se puede poner dentro de comillas tambien si se quita el espacio, no se mostrara el estilo*/
+[data-parrafo~=atributo]{
+    background-color: bisque;
+}
+
+/*selector de atributos separados por or | es para los que tienen un - dentro*/
+[data-parrafo|=atributo]{
+    background-color: firebrick;
+    color:white;
+    font-size: 30px;
+}
+
+/*para los que comiencen con la palabra escrita despues de ^= */
+h3[title^=con]{
+    background-color:chocolate;
+    color:white;
+    padding:10px;
+}
+/*para los que terminen con el valor anexado osea despues de $=*/
+h3[title$=n4]{
+    background-color: fuchsia;
+}
+/*para los que contengan el valor anexado*/
+h3[title*=contiene]{
+    background-color:dimgray;
+    font-size: 50px;
+}

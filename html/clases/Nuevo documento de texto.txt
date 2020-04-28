@@ -1,0 +1,8 @@
+for(int i=0; i<valoringresado; i++){
+	raiz=i*i;
+	if(raiz>valoringresado){
+		i=valoringresado;
+	}else{
+		
+	}
+}

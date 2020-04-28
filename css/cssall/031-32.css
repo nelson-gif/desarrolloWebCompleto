@@ -1,0 +1,41 @@
+/*031
+slector --> h3  { <propiedad todo lo que esta dentro de las llaves, es lo que se va a aplicar al selector>color: green; } es a lo que se le va a dar el estilo, declaracion son las llaves
+<link rel="stylesheet" href="estilos.css"> para ponerlo en html y que invoque estilos.css
+
+slector universal siempre al inicio el * indica todas las etiquetas
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+h1 {
+    color: blueviolet;
+    background-color: forestgreen;
+    padding: 10px;
+    text-align: center;
+    font-family: cursive;
+    border: 5px solid red;
+    
+}
+
+
+
+h1{
+    /*este sobreescribe el h1 de arriba ya que esta en cascada y css lee de arriba hacia abajo.*/
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+/*selector descendiente*/
+div p span{
+    color: rgb(55, 25, 180);
+    background-color: beige;
+}

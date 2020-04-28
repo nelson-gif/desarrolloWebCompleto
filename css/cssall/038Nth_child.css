@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial;
+}
+
+caption{
+    font-size:30px;
+}
+
+table{
+    border-collapse:collapse;/*separate*/
+    /*border-spacing:15px;*/
+    margin: 30px auto;
+}
+
+thead th{
+    border-bottom:1px solid #8d1f6f;
+}
+
+th, td{
+    padding: 10px 15px;
+    border-right: 1px solid #8d1f6f;
+    border-bottom: 1px solid #8d1f6f;
+}
+
+th:last-child, td:last-child{
+    border-right: none;    
+}
+
+tbody tr:last-child td{
+    border-bottom: none;
+}
+
+/*numero de hijos que tiene el padre (1) selecciona al primer hijo y asi sucesivamente
+(2n) ó (odd)selecciona los pares, (2n+1) ó (even) selecciona los impares ver video para mas opciones
+nth-child inicia desde el primer hijo hacia adelante*/
+tbody tr:nth-child(2n){
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+colgroup col:nth-child(odd){
+    background-color:darkslateblue; 
+}
+/*nth-lastchild inicia desde el ultimo hijo hacia el primer hijo*/
+tbody tr:nth-last-child(1){
+    background-color:aquamarine;
+}

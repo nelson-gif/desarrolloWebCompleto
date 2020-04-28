@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>semantica a nivel de texto</title>
+    </head>
+    <body>
+       <!--para poner enlaces, target blank para abrir en otra pestania-->
+        <a href="https://google.com" target="_blank">google</a>
+        
+        <em>texto enfatizado, como cursiva</em>
+        <strong>Estilo parecido al Bold de las fuentes, como negrita</strong>
+        <small>esto es una fuente pequenia</small>
+        <big>esta es una fuente grande</big>
+        <!--para mostrar codigo de programacion-->
+        <code>
+           if(asdf){
+            asdf
+        }
+        </code>
+        <!--sub es para subindices, span es para lo demas-->
+        <span>H</span><sub>2</sub><span>O</span>
+        <!--superindice-->
+        <span>X<sup>2</sup></span>
+        
+        <i>cursica Italic</i>
+        <b>negrita</b>
+        <u>underline</u>
+        <s>tachado</s>
+        <cite>esto es una cita</cite>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore accusantium quis tenetur deseruntbr <br> est. Aliquam, at beatae perspiciatis ex optio perferendis, molestias qui! Maxime magnam, corporis eum quam ipsum repellat.</p>
+        <!--si un texto no se alcanza a ver hara un salto de linea-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, <wbr> voluptates. Accusamus quas blanditiis voluptatum rem eius, corporis, repellat ipsa laudantium perferendis. Veritatis, temporibus, ad. Qui, perspiciatis quasi. Iure quam, atque!</p>
+        <span>no tiene ningun formato se suele usar solo para ponerle clases y darle estilo a lo que este dentro de esto</span>
+        
+        <!--codigo incrustado parte, 1 si la imagen no se muestra, se mostrara lo que este en el alt-->
+        <img src="img/caballos.jpg" alt="caballos galopando">
+        
+        <!--iframe muestra la pagina web dentro de src y lo muestra en un cuadro se puede agregar videos de youtube tambien pero para que lo muestre en el link hay que reemplazar watch?v= por embed/ y se mostrara el video de youtube nada mas pero no permite la opcion de pantalla completa, para arreglar eso hay que poner el allorfullscreen,frameborder elimina el border-->
+        <iframe src="index.html" frameborder="0" ></iframe>
+        
+        <iframe src="youtube.com..." frameborder="0" allowfullscreen></iframe>
+        
+        <!--para insertar videos o audios, tambien archivos swf-->
+        <embed src="videos/caballosgalopando.mp4" type="">
+        
+        <!--para insertar casi cualquier clase de objetos, videos, mp3, swf, imagenes, pdf, etc. type no es necesario ya que los navegadores ya reconocen que tipo de archivo es 
+        param es para que se autoejecute el mp4 o mp3 con valor true, autoplay se puede reemplazar por autostar-->
+        <object data="caballos.mp3" type="">
+            <param name="autoplay" value="true">
+        </object>
+        
+        <h2>parte 2</h2>
+        <audio src="caballos.mp3" controls >
+            <p>tu navegador no reproduce este audio, esto solo se mostrara si el navegador no muestra el audio</p>
+        </audio>
+        
+        <video src="caballosgalopando.mp4" controls poster="img/caballos.jpg">
+            <p>su navegador no reproduce, el poster es para que muestre esa imagen en el video, ver video 016 por mas opciones de etiqueta video, track es para poner subtitulos al video</p>
+            <track kind="subtitles" label = "Espaniol" srclang="es" src="subtitulos_es.vtt"></track>
+        </video>
+        
+        <h2>para desplegar la paleta de colores, dar clic dentro del color ej, blue dar clic dentro y presionar ctrl + e para desplegar la paleta de colores</h2>
+        
+        
+        <h2><br>contenido incrustado parte 3, ver video 017</h2>
+        <canvas></canvas>
+        <sva></sva>
+        
+        <h2>datos tabulares 018, tr son filas, td son celdas, thead es donde van los titulos de cada celda,th son los titulos de cada celda, tbody es el cuerpo de la tabla, tfoot es el pie de tabla </h2>
+        <table border="" cellpadding="10" cellspacing="5">
+           <caption>Titulo de la tabla</caption>
+           <thead>
+               <colgroup>
+                   <col width="180" style="background-color:aqua">
+                   <col style="background-color: blue">
+               </colgroup>
+                <tr>
+                    <th>No.</th>
+                    <th>Nombre</th>
+                    <th>Apillido</th>
+                    <th>No. Identificacion</th>
+                    <th>Telefono</th>
+                </tr>   
+           </thead>
+           <tbody>
+               <tr>
+                    <td>1</td>
+                    <td>nelson</td>
+                    <td>velasquez</td>
+                    <td>23434</td>
+                    <td>3423423</td>
+                </tr>
+                <tr>
+                   <!--rowspan es para que ocupe n filas-->
+                    <td rowspan="2">1</td>
+                    <td>nelson</td>
+                    <td>velasquez</td>
+                    <td>23434</td>
+                    <td>3423423</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>nelson</td>
+                    <td>velasquez</td>
+                    <td>23434</td>
+               </tr>
+           </tbody>
+           <tfoot>
+               <tr>
+                  <!---colspan es para ocupar las 5 columnas y no quede solo en una columna-->
+                   <td colspan="5" style="text-align:center">adfawer</td>
+               </tr>
+           </tfoot>
+        </table>
+        
+        <h2>019 formularios</h2>
+        
+        
+        
+    </body>
+    
+</html>
