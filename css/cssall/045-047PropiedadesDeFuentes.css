@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding: 0px;
+    padding: 20px;
 }
 
 p{/*primero busca helvetica si no la encuentra busca arial y sucesiv.*/
@@ -16,7 +16,13 @@ p{/*primero busca helvetica si no la encuentra busca arial y sucesiv.*/
     /*poner todo en una sola propiedad*/
     /*en este orden colocar, font-style, font-weight, font-variant, font-size, font-family, es valido si solo se pone font-size, y font familly*/
     font:italic bold small-caps 20px Helvetica;
-    
+    text-indent: 30px;/*para poner sangria o tabular texto*/
+    text-transform: capitalize;/*uppercase mayuscula todos, lowercase todo minuscula*/
+    white-space: pre-wrap;/*con pre el texto se mostrará tal y como estpa en la etiqueta p con espacios y enters que tenga con pre-wrap tambien pero respeta el contenedor con preline elimina los espacios en blanco pero siempre respetando los enter*/
+    word-spacing: 30px;/*agrega espacios entre palabras*/
+    letter-spacing: .7em;/*agrega espacios entre letras*/
+    text-align: center;/*alinea el texto*/
+    text-decoration: underline;/*line-through, etc*/
 }
 
 
