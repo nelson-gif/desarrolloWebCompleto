@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ol, ul{
+    list-style-type: lower-roman;/*cambiar tipo viñeta*/
+    list-style-position: inside;/*para agregar las viñetas dentro del border*/
+    /*list-style-image: url(../images/icon.jpg);agrega la imagen en cada viñeta*/
+    list-style-image: url(https://www.impactofinal.org/webespa/imagenes/vineta.png);/*agrega imagen en viñeta desde una pagina web*/
+    /*hacer todo lo anterior en una sola linea*/
+    list-style: upper-roman inside url(http://www.impactofinal.org/webespa/imagenes/vineta.png);
+    padding-left: 0;
+}
+
+li{
+    border: 1px solid blue;
+    padding: 5px;
+}

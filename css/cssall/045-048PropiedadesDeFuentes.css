@@ -27,7 +27,7 @@ p{
     text-decoration: underline;/*line-through, etc*/
 
     
-    /*estas propiedades solo son para firefox*/
+    /*estas propiedades solo son para firefox aunque parece ser que ya funciona en chrome*/
     text-decoration-style: dashed;/*puntea las lineas que se dan en text-decoration*/
     text-decoration-color: blue;
     text-decoration-line:overline;/*lo mismo que text-decoration*/
