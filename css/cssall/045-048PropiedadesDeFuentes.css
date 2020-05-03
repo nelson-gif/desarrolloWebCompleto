@@ -3,7 +3,9 @@
     padding: 20px;
 }
 
-p{/*primero busca helvetica si no la encuentra busca arial y sucesiv.*/
+p{
+    
+    /*primero busca helvetica si no la encuentra busca arial y sucesiv.*/
     /*tipos de fuentes genericas, serif --> Times New Roman, Times, Garamond, Georgia, Cambria, sans-serif --> Arial, Helvetica, Verdana, Trebuchet, Tahoma, Futura, cursive --> Comic Sans, fantasy--> Impact
     , monospace -->Courier New, Monaco, Consolas*/
     /*
@@ -23,6 +25,24 @@ p{/*primero busca helvetica si no la encuentra busca arial y sucesiv.*/
     letter-spacing: .7em;/*agrega espacios entre letras*/
     text-align: center;/*alinea el texto*/
     text-decoration: underline;/*line-through, etc*/
+
+    
+    /*estas propiedades solo son para firefox*/
+    text-decoration-style: dashed;/*puntea las lineas que se dan en text-decoration*/
+    text-decoration-color: blue;
+    text-decoration-line:overline;/*lo mismo que text-decoration*/
+
+    /*aqui en adelante si soportan los navegadores*/
+    -moz-text-align-last: right;/*mueve la ultima linea*/
+    wo//rd-wrap: break-word;/*texto no se salga del contenedor*/
+    overflow: hidden;
+    text-overflow: ellipsis;/*muestra puntos suspensivos cuando el texto se desborde*/
+    
 }
 
-
+h2{
+    /*sombrear texto*/
+    /*x y blur color*/
+    text-shadow: 5px 5px 4px rgb(18, 18, 116);
+    text-transform: uppercase;
+}
