@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.caja{
+    height: 250px;
+    width: 250px;
+    background-color: aquamarine;
+    border: 10px solid black;/*se aplica a todos lados*/
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+
+    /*padding: top right bottom left; siempre empieza arriba y va a favor de las manesillas del reloj hacia la derecha*/
+    /*padding: 10px; 10px en todos los lados*/
+    /*padding: 60px 60px 60px 10px; hace todo lo anterior en una sola linea*/
+    border-top:10px solid blue;
+    border-right: 10px solid red;
+    border-bottom: 10px double green;
+    border-left: 10px dashed violet;
+    border-left-color: fuchsia;
+    border-left-style: dotted;
+    border-right-width: 25px;
+
+    margin-top: 25px;
+    margin-right: 100px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    /*centrando el contenedor*/
+    margin-left: auto;
+    margin-right: auto;   
+    /*margin: top right bottom left; todo en una sola linea*/
+
+    
+}
