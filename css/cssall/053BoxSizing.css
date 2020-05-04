@@ -1,0 +1,44 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Helvetica, sans-serif;
+}
+
+.contenedor{
+    border: 4px solid violet;
+    width:400px;
+    height: auto;
+    margin: 20px auto;
+    overflow: hidden;
+    display: table;
+    padding: 10px;
+    background-color: cornsilk;
+}
+.caja{
+    height: 100px;
+    width: 50%;
+    background-color: aquamarine;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed black;
+    box-sizing: content-box;/*por defecto lo tienen los navegadores suma el border y padding al ancho*/
+    /*no afecta el ancho sigue siendo el mismo no le suma el border y el padding mas bien se lo resta con tal de dejar el mismo tamaño*/
+    box-sizing: border-box;
+    /*padding box solo soporta firefox resta el padding al contenedor
+    box-sizing: padding-box; o parece ser que ya no lo soporta firefox*/
+    
+
+
+}
+h1{
+    background-color: brown;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
