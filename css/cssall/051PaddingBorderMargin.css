@@ -32,7 +32,18 @@
     /*centrando el contenedor*/
     margin-left: auto;
     margin-right: auto;   
+    /*margin: top auto; anterior en una sola linea*/
     /*margin: top right bottom left; todo en una sola linea*/
 
-    
+    /*clase 52*/
+    width: 50%;/*50% del navegador, se ajusta al tamaño del navegador*/
+    height: auto;/*50% too auto is for it adjust with the text*/
+    min-width: 700px;/*si se reduce el  navegador se ajusta, you can use 50% too*/
+    max-width: 400px;
+
+}
+
+p{
+    text-align: center;
+    color: red;
 }
