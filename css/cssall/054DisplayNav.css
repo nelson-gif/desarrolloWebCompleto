@@ -8,5 +8,52 @@ nav{
     margin: 40px;
     border: 1px dashed red;
     padding: 10px;
+    display: none;/*oculta el contenido y los que esta despues se posiciona en esta misma posicion*/
 }
 
+ul li{
+    list-style: none;
+    padding: 5px;
+    border: 1px dashed;
+}
+
+span{
+    display: block;/*ocupa todo el ancho de su contenedor, block si respeta alto y ancho,  inline no respeta el ancho y alto span es inline por defecto*/
+    width: 40px;/*aun sigue utilizando todo el ancho de su contenedor*/
+    height: 90px;
+    background-color: brown;
+    color: wheat;
+    padding: 5px;
+}
+
+.span{
+    display: inline-block;
+}
+
+td, th{
+    padding: 20px;
+}
+
+div{
+    display: table;/*convierte a etiqueta table*/
+}
+
+a{
+    display: table-row;/*convierte a una fila (tr)*/
+}
+
+p{
+    display: table-cell;/*convierte a celdas, (td o th)*/
+    padding: 10px;
+}
+
+article{
+    display: table-caption;/*convertir a titulo de la tabla (caption)*/
+    text-align: center;
+    border: 1px solid black;
+}
+
+section{
+    display: table-header-group;/*para convertir a thead, se comporta como un thead*/
+    /*display: table | table-cell | table-header-group| table-footer-group| table-cation | table-row | table-row-group | table-colum  table-colum-group son todas las opciones*/
+}
