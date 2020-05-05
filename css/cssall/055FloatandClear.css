@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, sans-serif;
+}
+/*
+div{
+    margin: 30px;
+    padding: 15px;
+    background-color: aquamarine;
+}
+img{
+    padding: 15px;
+    float:left;/*flota a la izquierda, deja que lo demas en linea se agrege a su alrededor//
+}
+
+h3{
+    float: left;
+    padding: 15px;
+}
+
+p{
+    float: left;/*al ser todas flotantes el contenedor padre pierde a sus hijos para arreglar esto se agrega un br de ultimo del contenedor//
+    padding: 15px;
+}
+
+br{
+    clear: both;/*limpia los flotantes  o  los errores//
+}
+*/
+.d1{
+    background-color: aqua;
+    width: 100%;
+    height: 50px;     
+}
+
+.d2{
+    background-color: red;
+    width: 70%;
+    height: 600px;
+    float: left;
+}
+
+.d3{
+    background-color: violet;
+    width: 30%;
+    height: 600px;
+    float: right;
+}
+
+.d4{
+    background-color: green;
+    width: 100%;
+    height: 50px;
+    /*se puede poner clear: both a cada div que no se muestre, pero tambien se puede crear una sola clase y a ese aplicarle clear both entonces ese div se pone arriba del que no se mire*/
+}
+
+.limpiador{
+    clear: both;
+}
+/*todas las clases que comiencen con i*/
+[class^=i]{
+    height: 100px;
+}
+
+.i1{
+    border: 1px dashed white;
+    
+}
+
+.i2{
+    border: 1px dashed black;
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    /*otra opcion para no usar box-sizing: border box es calcular 
+    width: calc(30% -4px); y listo podrá cazar los dos contenedores*/
+}
+
+.i3{
+    border: 1px dashed white;
+    /*width: 70%; no caza bien por los 4 pixeles agregados con el border*/
+    width: 70%;
+    box-sizing: border-box;
+    /*para no agregar border box a cada uno, se puede poner en el selector universal*/
+    float: right;
+}
+.i4{
+    border: 1px dashed blue;
+}
