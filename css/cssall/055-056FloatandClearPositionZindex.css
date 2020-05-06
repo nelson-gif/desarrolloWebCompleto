@@ -32,6 +32,11 @@ br{
     background-color: aqua;
     width: 100%;
     height: 50px;     
+    position: fixed;/*lo deja fijo pero quedo abajo para arreglarlo zindex*/
+    /*hay que darle un position antes de aplicar zindex si no se aplica un position no funciona el zindex*/
+    z-index: 1;/*para indicar que fue lo primero que se agrego, si hay otro zindex 2 el 2 se sobrepone al 1 y el 3 se sobrepone al 2 y al 1 y asi sucesivamente*/
+    text-align: center;
+    top: 20px;
 }
 
 .d2{
@@ -39,12 +44,13 @@ br{
     width: 70%;
     height: 600px;
     float: left;
+    position: relative;
 }
 
 .d3{
     background-color: violet;
     width: 30%;
-    height: 600px;
+    height: 1600px;
     float: right;
 }
 
@@ -75,6 +81,12 @@ br{
     box-sizing: border-box;
     /*otra opcion para no usar box-sizing: border box es calcular 
     width: calc(30% -4px); y listo podrá cazar los dos contenedores*/
+    /*clase 56*/
+    background-color: aquamarine;
+    position: relative;/*ahora se le puede dar propiedades, top, right, bottom, left*/
+    top: 30px;
+    left: 50px;
+    z-index: 2;
 }
 
 .i3{
@@ -84,7 +96,18 @@ br{
     box-sizing: border-box;
     /*para no agregar border box a cada uno, se puede poner en el selector universal*/
     float: right;
+    /*clase 56*/
+    /*referente a un contenedor padre que sea relative en este caso d2 es su contenedor padre con position relative*/
+    position: absolute;
+    background-color: blue;
+    top:0px;
+    left: 0px;
+    background-color: black;
+    z-index: 3;
 }
 .i4{
     border: 1px dashed blue;
+    background-color: yellow;
+    position: relative;
+    z-index: 4;
 }
