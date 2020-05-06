@@ -1,0 +1,63 @@
+/*clase57 es de unidades absolutas*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*
+html{
+    font-size: 10px;
+}para modificar el tamaño del html o navegador
+*/
+.padre{
+    padding: 10px;
+    background-color: aqua;
+    font-size: 20px;
+}
+
+.padre p{
+    font-size: 2em;/*unidades  relativas son relativas al tamaño de su padre para calcularlo xem*xmedidadelPadre para este caso seria 2em*20px= 40px exite ex que es la mitad de em, rem es relativo al valor por defecto de los navegadores que es 16px rem no es relativo a su padre la forma de calculo es la misma*/
+    /*para las fuentes usar medidas rem para el ancho usar medidas de porcentaje y asi sea responsive*/
+}
+
+.padre2{
+    width: 300px;
+    height: 150px;
+    background-color: blueviolet;
+}
+
+.hijo1{
+    width:50%;/*es relativo a su elemento padre en este caso a los 300px de padre2, si le doy un 100% toma un valor de 300px*/
+    /*para obtener el valor en pixeles con una regla de 3 o multiplicando el valor del elemento padre por el porcentaje en ese caso seria 300*0.5= 150px*/
+    height: 50px;
+    background-color: green;
+    position: relative;
+    top: 100px;
+}
+/*clase 59 unidades relativas viewport*/
+/*vw significa viewport width hace referencia al ancho de la ventana, vh significa viewport height hace referencia a la altura de la ventana y vmin es viewport min y vmax es viewport max*/
+.caja1{
+    background-color: aqua;
+    height: 100px;
+    width: 50vw;/*hace referencia a la mitad del ancho del navegador y se ajusta a la mitad de su ancho*/
+}
+
+.caja2{
+    background-color: crimson;
+    width: 100px;
+    height: 50vh;/*hace referencia a la mitad del alto de la ventana, si le pusiera un 50wh al height tomaria la mitad de la medida del ancho de la ventana y se lo apliaria al alto lo mismo pasaria si le aplico un vh al width*/
+    
+}
+
+.caja3{
+    /*vmin toma el 1% del valor menor de la ventana ya sea de la altura o del ancho el que sea menor ese lo toma y da el 1% y vmax el maximo*/
+    background-color: blue;
+    height: 100px;
+    width: 50vmin;/*en este caso seria el 50% de ya sea del ancho o ya sea del alto de la ventana, segun sea el que tenga un tamaño mas pequeño y lo mismo pasa con vmax pero toma el valor mas grande*/
+}
+
+.caja4{
+    background-color: blueviolet;
+    width: 100px;
+    height: 50vmax;/**/
+}
