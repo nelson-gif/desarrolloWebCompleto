@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #e22b2b;
+}
+div{
+    height: 300px;
+    width: 300px;
+    background-color: aquamarine;
+    margin:100px auto;
+    border-top-left-radius: 50px; /*redondear la esquina superior izquierda se le puede dar dos valores en x y en y para controlar hasta donde se le aplica el border radius*/
+    /*se le puede aplicar medidas relativas y tambien porcentaje*/
+    border-top-left-radius: 300px 60px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 150px;
+    /*metodo shortan todo lo anterior en una sola linea*/
+    /*si se le aplica un solo valor, lo aplica a todos los lados, border-radius: left right bottomright bottomleft
+    border-radius: valor1 valor2; <-- de esta manera el primer valor aplica superior izquierda y a inferior derecha y segundo valor aplica a superior derecha e inferior izquierda*/
+    border-radius: 20px 30px 50px 40px;
+    border-radius: 40px / 20px; /*x / y del circulo pequeño en cada esquina
+    border-raius: 40px 20px/30ox 50px*//*ver clase*/
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: relative;
+    top: -75px;
+}
