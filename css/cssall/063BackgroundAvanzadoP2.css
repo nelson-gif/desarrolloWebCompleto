@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    height: 300px;
+    background-color: firebrick;
+}
+section{
+    height: 400px;
+}
+.uno{
+    height: 300px;
+    background-color: aqua;/*se puede ver feo si la imagen es transparente o png para arreglarlo darle un filter a img*/
+}
+.uno img{
+    width: 50%;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.47);/*ponerle sombra al cuadro de la imagen o al contenedor de la imagen*/
+    filter:drop-shadow(10px, 10px 15px red);/*para aplicarle el filtro solo al contorno de la imagen si esta es transparente si funciona dropshadow(x, y, valordesombra, colordesombra)*/
+}
+.dos{
+    background: url(../images/índice.jpeg) fixed no-repeat center;
+    background-size: cover;
+    filter: blur(15px);/*desenfocar la imagen, para chrome: -webkit-filter: blur();*/
+    filter: blur(1px) /*grayscale(1)*/ brightness(2) /*contrast(10)*/ hue-rotate(20deg) invert(0) opacity(1) sepia(.8) saturate(.9);
+    /*se pueden poner varias propiedades en una sola linea, grayscale para darle un blanco y negro a la imagen valores de 0 a 1, brightness es para darle brillo valores de 1 en adelante, contrast es contraste valores de 1 en adelante, hue rotate color matiz valores en grados deg es para indicar en grados quitar grayscale y contrast para que se logre aprecias 0 a 360 grados, invert para invertir los colores va desde 0 hasta 1, opacity opacidad de 0 a 1, sepia de cero a 1, saturate saturacion desde 0 a 1*/
+}
+.tres{
+    background: url(../images/índice.png) #00ff62 fixed no-repeat center;
+    background-color: rgba(6, 91, 248, 0.651);
+    background-size: cover;
+    background-blend-mode: luminosity;/*sobrepone el color ante la imagen*/
+}
