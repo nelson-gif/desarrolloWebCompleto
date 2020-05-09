@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    width: 300px;
+    height: 100px;
+    margin: 100px auto;
+    border: 30px solid;
+    background-color: aquamarine;
+    border-image-source: url(../images/WhatsApp\ Image\ 2020-05-06\ at\ 11.49.20\ PM.jpeg);/*para poner imagenes como bordes*/
+    border-image-slice: 90 ;/*divide la imagen en 9 secciones, border-image-slice: 30 fill; fill muestra el relleno en el centro ver video*/
+    border-image-width: 60px;/*controla el ancho del borde, acepta porcentaje y valores relativos*/
+    border-image-outset: 80px;/* pone como un padding dentro*/
+    border-image-repeat: repeat;/*repite la imagen mientras slice sea mayor mas se repite, valor round ajusta la imagen para que quede proporcionalmente, space rellena los espacions*/
+    /*metodo shortan border-image: url slice fill(no es obligatorio) / ancho ouset o space repeat*/
+}
