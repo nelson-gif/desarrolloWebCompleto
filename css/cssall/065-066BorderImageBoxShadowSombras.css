@@ -4,7 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-div{
+.borderimage{
     width: 300px;
     height: 100px;
     margin: 100px auto;
@@ -16,4 +16,13 @@ div{
     border-image-outset: 80px;/* pone como un padding dentro*/
     border-image-repeat: repeat;/*repite la imagen mientras slice sea mayor mas se repite, valor round ajusta la imagen para que quede proporcionalmente, space rellena los espacions*/
     /*metodo shortan border-image: url slice fill(no es obligatorio) / ancho ouset o space repeat*/
+}
+
+.box-shadow{
+    width: 400px;
+    height: 200px;
+    background-color: #0071BC;
+    margin: 100px auto;
+    /*x y blur(desenfoque) rgba(si no se pone toma negro por defecto) inset(agrega la sombra por dentro, no es necesario ponerlo); se pone una coma para agregar mas sombras*/
+    box-shadow: 10px 5px 7px red inset, -7px -7px green, 10px 10px yellow;
 }
