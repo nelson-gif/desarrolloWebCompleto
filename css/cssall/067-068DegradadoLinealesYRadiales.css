@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.degradado{
+    width: 400px;
+    height: 200px;
+    margin: 100px auto;
+    background: linear-gradient(yellow, black);/*(color que comienza, color que finaliza) el degradado empieza siempre desde el top y el ultimo valor aparece en bottom*/
+    /*para que empiece desde la derecha y termine a la izquierda (to left, colorinicial, colorfinal)
+    tambien se puede poner to top, to bottom, to right*/
+    background: linear-gradient(to left, yellow, black);
+    /*to top left, va desde parte superior derecha hacia superior izquierda, to top bottom left, to top right, to bottom right*/
+    background: linear-gradient(to top left, yellow, black);
+    /*tampien se puede poner valores en grados*/
+    /*se puede controlar el tamaño de cada color con grados distribuir 100% entre todos los colores, no es necesario poner porcentaje a todos los colores*/
+    background: linear-gradient(35deg, yellow 20%, black 25%, red 25%, green 30%);
+
+}
+
+.degradado-radial{
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    /*tambien acepta circle*/
+    background: radial-gradient( ellipse, yellow, black);/*empieza desde el centro, at right, at top, at left, at 50px, at 50px 50px, at 50%, at 50% 50%*/
+    background: radial-gradient(circle at right, yellow, black);
+    /*lado mas cercano closest-side, lado mas lejano farthest-side, lado mas cerca de las esquinas closest-corner, lado mas lejos de las esquinas farthest-corner*/
+    background: radial-gradient(circle closest-corner at 10% 15%, yellow, black);
+    background: radial-gradient(circle farthest-corner at 10% 15%, yellow 50%, orange 20%, black 70%);/*da la impresion de ser el sol*/
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, yellow 50%, orange 20%, black 50%);
+
+    /*forma de esfera*/
+    background: radial-gradient(circle at 30% 30%, yellow, black);
+
+    /*forma de luna*/
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 50%, rgba(139, 156, 165, 0), rgb(32, 32, 32));
+    position: relative;
+    top: -400px;
+    left: 200px;
+    filter: blur(1px);
+}
+body{
+    background: linear-gradient(rgb(151, 25, 16), rgba(32, 180, 160, 0.486));
+}
