@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: brown;
+}
+
+img{
+    margin: 15px 0;
+    width: 100%;
+}
+
+article{
+    margin: 50px;
+    padding: 15px;
+    background-color: cornsilk;   
+    column-count: 3;/*numero de columnas, siempre se aplica al contenedor*/
+    column-gap: 80px;/*espacio entre columnas*/
+    /*lineas divisorias*/
+    column-rule-width: 3px;
+    column-rule-style: solid;
+    column-rule-color: black;
+    /*metodo shortand column-rule: grosos estilo color;*/
+    column-width: 100px;/*cuando sea inferior a esto se reduce a una sola columna si es mayor se expande a las 3 columnas indicadas anteriormente, esto es para que sea responsive*/
+
+    /*metodo shortan para colum width y count*/
+    columns: 4 200px;
+
+}
+p{
+    margin: 10px 0;
+}
+
+h1{
+    column-span: all; /*para que el h1 se muestre en todo el contenedor, no se divide*/
+    text-align: center;
+    margin: 10px 0;
+}
