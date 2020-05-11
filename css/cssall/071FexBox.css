@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: brown;
+}
+#contenedor{
+    display: flex;/*fija a los elementos hijos en una sola linea, se adaptan los contenedores hijos al ancho de la pantalla en este caso cuando llegue a su maximo width se quedaran fijos y ya no se agrandaran, y posiciona por defecto en eje x*/
+    flex-direction: column;/*los posiciona en fila hacia abajo eje y*/
+    flex-direction: column-reverse;/* pone en eje y desde el ultimo al primero */
+    flex-direction: row-reverse;/*pone en eje x desde el ultimo al primero y se posiciona en la parte derecha*/
+    flex-direction: row;/*los posiciona horizontalmente eje x*/
+    flex-wrap: wrap;/*cuando una caja no quepa en el ancho del navegador lo manda a la siguiente linea, no-wrap es el que tienen los navegadores por defecto, wrap-reverse para de izquierda a derecha y abajo hacia arriba*/
+    /*para agregar direccion y wrap en una sola linea*/
+    flex-flow: row wrap;
+    
+    justify-content: space-around;/*space-around aplica la misma distancia entre ellos pero no pega los contenedores de inico y final al borde del navegador deja como un tabulado o es mas como un centrado con espacios entre cada contenedor distribuye ese espacio de manera simetrica,space-between aplica la misma distancia entrre ellos pero el primer y ultimo elemento estaran alineados a los bordes del contenedor padre osea a la izquierda y derecha, flex-start es por defecto alinea a la izquiera o inicio, flex-end alinea a la derecha o al final del contenedor, center lo centra en el contenedor padre eje x*/
+    flex-flow: row nowrap;
+    height: 700px;
+    align-items: flex-end;/*stech por defecto*//*trabaja con los ejes secundarios para aplicar esta propiedad se tiene que establecer una altura antes al contenedor, se parece al justifycontent pero esta propiedad trabaja con eje secundario*/
+    align-items: flex-start;
+    align-items: baseline;/*alinea tomando en cuenta el valor o la posicion del inicio de cada texto*/
+    align-items: center;
+
+    flex-flow: row wrap;
+    align-content: flex-end;/*solo funciona si hay dos o mas lineas del mismo contenedor si solo hay una linea no pasa nada*/
+    align-content: flex-start;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: stretch;
+}
+
+#contenedor div{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    display: flex;/*fija en el contenido en una linea*/
+    justify-content: center;/*centrar en el horizontal*/
+    align-items: center;/*centrar en el contenedor*/
+    margin: 4px;
+    box-sizing: border-box;
+}
+
+p{
+    font-size:39px;
+}
