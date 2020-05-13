@@ -1,0 +1,36 @@
+@font-face{
+    font-family: "namePersonalizado";
+    src: url('../../fonts/Amerika/AMERIKAA.ttf') format('truetype');/*importar el font descargado, ver video para saber como descargar el kit*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: brown;
+}
+
+section{
+    width: 400px;
+    margin: 100px auto;
+    padding: 15px;
+    background-color: floralwhite;
+    border: 10px solid rgb(207, 102, 102);
+}
+
+h1{
+    text-align: center;
+    color: brown;
+    font-family: "namePersonalizado";/**/
+}
+h1, p, img{
+    margin-bottom: 10px;
+}
+
+img{
+    width: 100%;
+}
