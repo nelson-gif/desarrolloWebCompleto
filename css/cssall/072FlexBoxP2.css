@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: brown;
+}
+
+#contenedor{
+    height: 700px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#contenedor div{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+
+p{
+    font-size: 39px;
+}
+
+.uno{
+    order: 4;/*manda a la posicion 4*/
+    order: 1;/**/
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;/*tiene un ancho minimo de 200px, si se reduce la ventana mantiene su tamaño, se puede cambiar la  orientacion poniendo el flex-flow: column*/
+    flex: 1 3 auto;
+}
+.dos{
+    order: -1;/*manda a la posicion uno sin necesidad de darle un order a cada item*/
+    flex-grow: 1;/*anula el ancho de cada contenedor y lo vuelve responsivo*/
+    flex: 1 1 auto;
+    align-self: flex-end;/*no respeta el align-items*/
+}
+.tres{
+    flex-grow: 1;
+    /*flex: grow shrink basis*/
+    flex: 1 1 auto;
+}
+.cuatro{
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex: 1 1 auto;
+}
