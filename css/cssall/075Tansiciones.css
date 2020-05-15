@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: brown;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    margin: 0 auto;
+    transition-property: background-color, height;/*indicar a lo o a los que se le aplicara la transicion*/
+    transition-duration: 1s, 1s, 1s, width;/*intervalo de tiempo*/
+    transition-timing-function: steps(8, end);/*hace la transicion en 7 pasos*/
+    transition-timing-function: cubic-bezier(.32, .87, .74, .18);/*tipo de curva hecha por mi sacada de cubic-bezier.com*/
+    transition-delay: 0s, 1s, 2s;/*tiempo de espera*/
+    /*metodo shortand transiion: property duration function delay*/
+    transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s, height 1s ease 1s 
+    , width 1s ease-in-out 2s;
+
+    transition: all 1s ease;/*lo aplica a todas las propiedades*/
+}
+
+div:hover{/*al pasar el mouse encima del div aumenta su tamaño a 600px de color dodgerblue*/
+    height: 600px;
+    background-color: dodgerblue;
+    width: 100%;
+}
